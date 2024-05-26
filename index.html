@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>CANBUS - Apartamentos - Alquiler Temporario</title>
+
+	<link rel="icon" href="img/favicon.png">
+
+	<!--=====================================
+	CSS
+	======================================-->
+
+	<!-- BOOTSTRAP 4.4.1 -->
+	<link rel="stylesheet" href="src/bootstrap4.4.1/css/bootstrap.min.css">
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!-- jdSlider -->
+	<link rel="stylesheet" href="css/plugins/jdSlider.css">
+
+	<!-- Pinterest Grid -->
+	<link rel="stylesheet" href="css/plugins/pinterest_grid.css">
+
+	<!-- Ekko Lightbox -->
+	<link rel="stylesheet" href="css/plugins/ekko_lightbox.css">
+
+	<!-- icheck -->
+	<link rel="stylesheet" href="css/plugins/icheck.css">
+
+	<!-- Estilo personalizado -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--=====================================
+	JS
+	======================================-->
+
+	<!-- jQuery library -->
+	<script src="src/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="src/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript BOOTSTRAP 4.4.1 -->
+	<script src="src/bootstrap4.4.1/js/bootstrap.min.js"></script>
+
+
+	<!-- jdSlider -->
+	<!-- https://www.jqueryscript.net/slider/Carousel-Slideshow-jdSlider.html -->
+	<script src="js/plugins/jdSlider.js"></script>
+
+	<!-- Pinterest Grid -->
+	<!-- https://www.jqueryscript.net/layout/Simple-jQuery-Plugin-To-Create-Pinterest-Style-Grid-Layout-Pinterest-Grid.html -->
+	<script src="js/plugins/pinterest_grid.js"></script>
+
+	<!-- Ekko Lightbox -->
+	<!-- https://ashleydw.github.io/lightbox/ -->
+	<script src="js/plugins/ekko_lightbox.js"></script>
+
+	<!-- Jquery Easing -->
+	<!-- https://easings.net/es -->
+	<script src="js/plugins/jquery.easing.js"></script>
+
+	<!-- scrollup -->
+	<!-- https://markgoodyear.com/labs/scrollup/ -->
+	<script src="js/plugins/scrollUp.js"></script>
+
+	<!-- super-scrollorama -->
+	<!-- http://johnpolacek.github.io/superscrollorama/ -->
+	<script src="js/plugins/super-scrollorama.js"></script>
+	<script src="js/plugins/TweenMax.min.js"></script>
+
+	<!-- Sticky JS (MENU SIEMPRE VISIBLE) -->
+	<!-- http://stickyjs.com/ -->
+	<script src="js/plugins/sticky.js"></script>
+
+	<!-- ICHECK -->
+	<!-- http://icheck.fronteed.com/ -->
+	<script src="js/plugins/icheck.min.js"></script>
+
+	<!-- ICONOS ICONIFY -->
+	<script src="src/iconify.min.js"></script>
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+		type="text/css">
+
+</head>
+
+<body id="top">
+
+	<div id="imgFondo"></div>
+
+	<!--=====================================
+	HEADER Y NAV
+	======================================-->
+	<header class="container-fluid bg-light shadow pb-0" id="inicio">
+
+		<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+			<div class="container my-0 py-0" style="margin: 0; padding: 0;">
+				<a class="navbar-brand text-center" href="#">
+					<img src="img/logotipo3.png" style="width: 171px;">
+				</a>
+				<div class="langWrap my-0 py-1"
+					style="display:flex; flex-direction: row; justify-content: center; align-items: center; border: 0px solid gray; border-radius: 5px; margin: 0; padding: 0;">
+
+					<a language='spanish' onclick="reloadPage()" class="active" href="#es" data-reload><img
+							alt="Volver a idioma español" title="Volver a idioma español"
+							src="https://countryflagsapi.com/svg/es"
+							style="width: 30px; height: 14px; border-radius: 3px; margin-right: 2px;"></a>
+
+					<a language='english' onclick="reloadPage()" href="#en" data-reload><img
+							alt="Switch to English language" title="Switch to english language"
+							src="https://countryflagsapi.com/svg/us"
+							style="width: 30px; height: 14px; border-radius: 4px;"></a>
+
+				</div> 
+			</div>
+
+			<button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+				<ul class="navbar-nav ml-auto bg-light">
+
+					<li class="nav-item">
+						<a class="nav-link d-none d-lg-block" href="#top">
+							<p class="navInicio my-0 py-0" id="navInicio">Inicio</p>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#galeria">
+							<p class="navFotos my-0 py-0" id="navFotos">Fotos</p>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#servicios">
+							<p class="navServ my-0 py-0" id="navServ">Servicios</p>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#promociones">
+							<p class="navPromo my-0 py-0" id="navPromo">Promociones</p>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#ubicacion">
+							<p class="navUbic my-0 py-0" id="navUbic">Ubicación</p>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#formulario">
+							<p class="navOpin my-0 py-0" id="navOpin">Opiniones</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav> -->
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+			<a class="navbar-brand text-center" href="#top">
+				<img src="img/logotipo3.png" style="width: 171px;">
+			</a>
+
+			<button class="navbar-toggler mr-0 ml-0" type="button" data-toggle="collapse" data-target="#navbarToggler77"
+				aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+
+
+				<div class="dropdown my-0 py-0 ml-0 mr-3" style="display: inline-block; font: medium; color: black;">
+					
+					<a class="nav-link dropdown-toggle mr-0" href="#" id="navbarDropdownMenuLink78"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+
+					<div class="dropdown-menu mr-0 ml-0" aria-labelledby="navbarDropdownMenuLink78">
+
+						<a class="dropdown-item active mr-0 ml-0 href="#es" language='spanish' onclick="reloadPage()"
+							data-reload><span class="flag-icon flag-icon-es"></span> Español</a>
+
+						<a class="dropdown-item mr-0" language='english' onclick="reloadPage()" href="#en" data-reload><span
+								class="flag-icon flag-icon-us"></span> English</a>
+
+					</div>
+				</div>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+
+			<div class="collapse navbar-collapse " id="navbarToggler77">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link d-none d-lg-block" href="#top">
+							<p class="navInicio my-0 py-0" id="navInicio">Inicio</p>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#galeria">
+							<p class="navFotos my-0 py-0" id="navFotos">Fotos</p>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#servicios">
+							<p class="navServ my-0 py-0" id="navServ">Servicios</p>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#promociones">
+							<p class="navPromo my-0 py-0" id="navPromo">Promociones</p>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#ubicacion">
+							<p class="navUbic my-0 py-0" id="navUbic">Ubicación</p>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#formulario">
+							<p class="navOpin my-0 py-0" id="navOpin">Opiniones</p>
+						</a>
+					</li>
+				</ul>
+				<div class="d-lg-block d-none dropdown">
+
+					<a class="nav-link dropdown-toggle mr-0 my-0 py-0 mr-3" href="#" id="navbarDropdownMenuLink78"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+
+					<div class="dropdown-menu mr-0 ml-0" aria-labelledby="navbarDropdownMenuLink78">
+						<a class="dropdown-item mr-0 ml-0 active" href="#es" language='spanish' onclick="reloadPage()"
+							data-reload><span class="flag-icon flag-icon-es"></span> Español</a>
+
+						<a class="dropdown-item mr-0" language='english' onclick="reloadPage()" href="#en" data-reload><span
+								class="flag-icon flag-icon-us"></span> English</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+
+	<!--=====================================
+	SLIDESHOW
+	======================================-->
+
+	<div class="container-fluid p-0 bg-white" style="border: 0px solid red;">
+
+		<section class="jd-slider slideshow" style="background-color: white;">
+
+			<div class="slide-inner">
+
+				<ul class="slide-area">
+					<li class="carrusel">
+						<div class="slide-text d-none d-lg-block">
+							<h3 id="welcHead1">Bienvenidos a Canbus</h3>
+							<p id="welcText1">¡Conoce la ciudad del sol y del buen vino!</p>
+						</div>
+						<img src="img/slide/slide01.jpg">
+					</li>
+					<li class="carrusel">
+						<div class="slide-text d-none d-lg-block">
+							<h3>Bienvenidos a Mendoza!</h3>
+							<p>Apartamentos en el corazón de Mendoza!</p>
+						</div>
+						<img src="img/slide/slide02.jpg">
+					</li>
+					<li class="carrusel">
+						<div class="slide-text d-none d-lg-block">
+							<h3>Disfruta de Mendoza</h3>
+							<p>Zona tranquila y cercanía al aeropuerto</p>
+						</div>
+						<img src="img/slide/slide03.jpg">
+					</li>
+					<li class="carrusel">
+						<div class="slide-text d-none d-lg-block">
+							<h3>La mejor comodidad al mejor precio</h3>
+							<p>Consulte las promociones disponibles!</p>
+						</div>
+						<img src="img/slide/slide04.jpg">
+					</li>
+				</ul>
+			</div>
+
+			<a class="prev" href="#">
+				<i class="fas fa-angle-left fa-2x text-white pl-3"></i>
+			</a>
+			<a class="next" href="#">
+				<i class="fas fa-angle-right fa-2x text-white pr-3"></i>
+			</a>
+
+			<div class="controller">
+
+				<a href="#" class="auto d-none">
+
+					<i class="fas fa-play fa-xs"></i>
+					<i class="fas fa-pause fa-xs"></i>
+
+				</a>
+
+				<div class="indicate-area d-none d-lg-block"></div>
+			</div>
+
+		</section>
+
+	</div>
+
+	<!--=====================================
+	REDES SOCIALES
+	======================================-->
+
+	<div class="container-fluid p-0 bg-white" style="border: 0px solid orange;" id="contacto">
+
+		<h3 class="text-uppercase py-2 mb-0 text-muted text-center bg-white" style="border: 0px solid brown;">
+		</h3>
+
+		<div class="container mb-0 mt-0 my-0 py-0" style="border: 0px solid green;">
+
+			<div class="row border my-0 bg-white py-0 shadow" style="border: 0px solid gray; border-radius: 10px;"
+				id="contacto">
+
+				<div class="col-md-12 col-lg-8 col-xl-9 p-0 mx-auto">
+
+					<div class="row my-2 py-0 mx-auto justify-content-center" style="border: 0px solid green;">
+
+						<div class="col-md-7 mb-0 ml-0 mr-0" id="container-list" style="border: 0px solid black;">
+							<div class="list-group">
+
+								<div class="list-group-item my-0 py-0 border-0">
+									<p class="my-0 py-0" style="text-align: center;" id="followUs">Contáctanos y
+										síguenos en:</p>
+								</div>
+
+								<div class="list-group-item mb-2 py-0 border-0 my-0"
+									style="text-align: center; margin: 0; padding: 0;">
+									<!-- <p class="my-0 py-0 " style="text-align: center;"> -->
+
+									<a href="https://wa.me/542616664806"><img id="wasap"
+											src="img/redes-sociales/WhatsApp_logo-color-vertical.svg"></a>&nbsp;
+
+									<a href="https://t.me/matu2982"><span class="iconify" data-icon="logos:telegram"
+											data-width="56" data-height="56"></span></a>
+
+									<a href="#"><span class="iconify" data-icon="dashicons:facebook"
+											style="color: #425db6;" data-width="64" data-height="64"></span></a>
+
+									<a href="#"><img id="instagram"
+											src="img/redes-sociales/Instagram_logo_2016.svg"></a>&nbsp;
+
+									<a href="tel:+542616664806"><img id="phone"
+											src="img/redes-sociales/blue-phone-7152.svg"></a>
+
+									<!-- </p> -->
+								</div>
+
+
+							</div>
+						</div>
+
+						<div class="col-md-5 mb-0" id="container-list" style="border: 0px solid black;">
+							<div class="list-group">
+								<!-- <div class="list-group-item my-0 py-0 border-0">
+									<p class="mb-0" style="font-size: small;"> <span class="iconify" data-icon="emojione-v1:mobile-phone" style="color: #425db6;" data-width="20" data-height="20"></span>&nbsp;&nbsp;+54 261 6664806
+									</p>
+								</div> -->
+								<div class="list-group-item my-0 py-0 border-0">
+									<p class="mb-0" style="font-size: small;"> <span class="iconify"
+											data-icon="fa6-solid:map-location-dot" style="color: #425db6;"
+											data-width="20" data-height="20"></span>&nbsp;&nbsp;xxxx xxxx 23456 -
+										LH -
+										Mendoza
+									</p>
+								</div>
+								<div class="list-group-item my-0 py-0 border-0">
+									<p class="mb-0" style="font-size: small;"><span class="iconify"
+											data-icon="fluent:mail-20-filled" style="color: #425db6;"
+											data-width="20"></span>&nbsp;&nbsp;info@canbus-apartamentos.com</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--=====================================
+	GALERIA DE FOTOS
+	======================================-->
+
+	<div class="container-fluid p-0 bg-white shadow" id="galeria">
+
+		<h2 class="text-uppercase py-3 text-muted text-center" id="seccionGaleria">Galería de fotos</h2>
+
+		<section class="pinterest_grid">
+
+			<article class="white-panel">
+
+				<a href="img/galeria/01.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/01.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel">
+
+				<a href="img/galeria/02.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/02.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel">
+
+				<a href="img/galeria/03.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/03.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel">
+
+				<a href="img/galeria/04b.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/04.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel">
+
+				<a href="img/galeria/05.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/05.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel">
+
+				<a href="img/galeria/06b.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/06.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel">
+
+				<a href="img/galeria/07.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/07.jpg">
+				</a>
+
+			</article>
+
+			<article class="white-panel">
+
+				<a href="img/galeria/08.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+					<img src="img/galeria/08.jpg">
+				</a>
+
+			</article>
+
+		</section>
+
+	</div>
+
+	<!--=====================================
+	SERVICIOS
+	======================================-->
+	<div class="container-fluid p-0 py-0 my-0 bg-white" style="border: 0px solid orange;" id="servicios">
+
+		<h3 class="text-uppercase py-3 mb-0 text-muted text-center bg-white" style="border: 0px solid brown;"
+			id="seccServ">Nuestros
+			servicios</h3>
+
+
+		<div class="container py-0 my-0" style="border: 0px solid green;">
+
+			<div class="row border py-0 my-0 bg-white shadow" style="border: 1px solid red;" id="servicios">
+
+				<div class="col-md-7 col-lg-8 col-xl-9 p-2 mx-auto">
+
+					<div class="row my-0 mx-auto justify-content-center" style="border: 0px solid green;">
+
+						<div class="col-md-4 mb-0 py-0" style="border: 0px solid black;">
+							<div class="list-group-flush">
+								<div class="list-group-item border-0" style="display: flex; align-items: left;">
+									<span class="iconify" data-icon="mdi:air-filter" style="color: #425db6;"
+										data-width="32" data-height="32"></span>
+									<p class="mt-1 mb-0 ml-2" id="servAc">Aire Acondicionado</p>
+								</div>
+								<div class="list-group-item border-0" style="display: flex; align-items: left;">
+									<span class="iconify" data-icon="fontisto:wifi" style="color: #425db6;"
+										data-width="32" data-height="32"></span>
+									<p class="mt-1 mb-0 ml-2" id="servWifi">WIFI</p>
+								</div>
+								<div class="list-group-item border-0" style="display: flex; align-items: left;">
+									<span class="iconify" data-icon="mdi:scale-bathroom" style="color: #425db6;"
+										data-width="32" data-height="32"></span>
+									<p class="mt-1 mb-0 ml-2" id="servRopa">Ropa de cama y toallas</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 mb-0 py-0" style="border: 0px solid black;">
+							<div class="list-group-flush">
+								<div class="list-group-item border-0"
+									style="display: flex; align-items: left; align-items: center;">
+									<span class="iconify" data-icon="mdi:garage-open-variant" style="color: #425db6;"
+										data-width="32" data-height="32"></span>
+									<p class="mt-1 mb-0 ml-2" id="servCochera">Cochera</p>
+								</div>
+								<div class="list-group-item border-0"
+									style="display: flex; align-items: left; align-items: center;">
+									<span class="iconify" data-icon="mdi:television" style="color: #425db6;"
+										data-width="32" data-height="32"></span>
+									<p class="mt-1 mb-0 ml-2">Smart TV</p>
+								</div>
+								<div class="list-group-item border-0"
+									style="display: flex; align-items: left; align-items: center;">
+									<span class="iconify" data-icon="uil:crockery" style="color: #425db6;"
+										data-width="32" data-height="32"></span>
+									<p class="mt-1 mb-0 ml-2" id="servVajilla">Vajilla Completa</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--=====================================
+	PROMOCIONES
+	======================================-->
+
+	<div class="container-fluid p-0 bg-white" style="border: 0px solid orange;" id="promociones">
+
+		<h3 class="text-uppercase py-3 my-0 text-muted text-center bg-white" id="seccPromo"
+			style="border: 0px solid brown;">
+			PROMOCIONES
+		</h3>
+
+		<div class="container my-0 py-0 mt-0 pt-0 shadow" style="border: 0px solid green;">
+
+			<div class="row border my-0 py-0 bg-white" style="border: 0px solid red;" id="servicios">
+
+				<div class="col-md-7 col-lg-8 col-xl-9 p-0 mx-auto" style="border: 0px solid red;">
+
+					<!-- <div id="serv" class="container my-4"> -->
+					<!--Grid row-->
+					<div class="row mx-auto py-2" style="border: 0px solid green;">
+
+						<div class="card mx-auto mb-3" style="width: 18rem; border-radius: 10px;">
+							<img src="img/promos/banner-promo.jpg" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title" id="promoTit1">Promoción Invierno 2022</h5>
+								<p class="card-text" id="promoText1">10% de descuento al reservar mas de 5 días!!</p>
+								<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+							</div>
+						</div>
+
+						<div class="card mx-auto mb-3" style="width: 18rem; border-radius: 10px;">
+							<img src="img/promos/banner-promo2.jpg" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title" id="promoTit2">Promoción web 2022</h5>
+								<p class="card-text" id="promoText2">5% de descuento en tu reserva al contactarte a
+									través de nuestra
+									web!</p>
+								<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+							</div>
+						</div>
+
+					</div>
+					<!--Grid row-->
+					<!-- </div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--=====================================
+	UBICACIÓN Y CONTACTO
+	======================================-->
+	<div class="container-fluid p-0 bg-white" style="border: 0px solid orange;" id="ubicacion">
+
+		<h3 class="text-uppercase py-3 my-0 text-muted text-center bg-white" id="seccUbic">Ubicación</h3>
+
+		<div class="container my-0 py-0 shadow" style="border: 0px solid gray;">
+
+			<div class="row border my-0 py-0 bg-white" style="border: 0px solid red; border-radius: 10px;">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.6496737353823!2d-68.81813574932524!3d-32.85452617446727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08b5ef1ae1e3%3A0x5acaf2757780f067!2sManuel%20A.%20S%C3%A1ez%201716%2C%20Las%20Heras%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1650927541131!5m2!1ses-419!2sar"
+					width="100%" height="500" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</div>
+	<!--=====================================
+	FORMULARIO
+	======================================-->
+
+	<div class="container-fluid p-0 bg-white" id="formulario">
+
+		<h3 class="text-uppercase py-3 my-0 text-muted text-center bg-white" id="seccOpin">Opiniones de nuestros
+			huéspedes</h3>
+
+		<div class="container mb-9 mt-0" style="border: 0px solid red;">
+
+			<div class="card mt-0 mb-0 shadow">
+				<div class="card-header" id="comTitl">Resumen de Comentarios</div>
+				<div class="card-body">
+					<div class="row">
+						<div class="col-sm-4 text-center">
+							<h1 class="text-warning mt-4 mb-4">
+								<b><span id="average_rating">0.0</span> / 5</b>
+							</h1>
+							<div class="mb-3">
+								<i class="fas fa-star star-light mr-1 main_star"></i>
+								<i class="fas fa-star star-light mr-1 main_star"></i>
+								<i class="fas fa-star star-light mr-1 main_star"></i>
+								<i class="fas fa-star star-light mr-1 main_star"></i>
+								<i class="fas fa-star star-light mr-1 main_star"></i>
+							</div>
+							<div style="display:flex; flex-direction: row; justify-content: center;">
+								<h3 class="mt-0 mb-0" id="total_review">0</h3>
+								<h3 class="ml-2 mt-0 mb-0" id="totCom">Comentarios</h3>
+							</div>
+
+						</div>
+						<div class="col-sm-4">
+							<p>
+							<div class="progress-label-left"><b>5</b> <i class="fas fa-star text-warning"></i></div>
+
+							<div class="progress-label-right">(<span id="total_five_star_review">0</span>)</div>
+							<div class="progress">
+								<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+									aria-valuemin="0" aria-valuemax="100" id="five_star_progress"></div>
+							</div>
+							</p>
+							<p>
+							<div class="progress-label-left"><b>4</b> <i class="fas fa-star text-warning"></i></div>
+
+							<div class="progress-label-right">(<span id="total_four_star_review">0</span>)</div>
+							<div class="progress">
+								<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+									aria-valuemin="0" aria-valuemax="100" id="four_star_progress"></div>
+							</div>
+							</p>
+							<p>
+							<div class="progress-label-left"><b>3</b> <i class="fas fa-star text-warning"></i></div>
+
+							<div class="progress-label-right">(<span id="total_three_star_review">0</span>)</div>
+							<div class="progress">
+								<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+									aria-valuemin="0" aria-valuemax="100" id="three_star_progress"></div>
+							</div>
+							</p>
+							<p>
+							<div class="progress-label-left"><b>2</b> <i class="fas fa-star text-warning"></i></div>
+
+							<div class="progress-label-right">(<span id="total_two_star_review">0</span>)</div>
+							<div class="progress">
+								<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+									aria-valuemin="0" aria-valuemax="100" id="two_star_progress"></div>
+							</div>
+							</p>
+							<p>
+							<div class="progress-label-left"><b>1</b> <i class="fas fa-star text-warning"></i></div>
+
+							<div class="progress-label-right">(<span id="total_one_star_review">0</span>)</div>
+							<div class="progress">
+								<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0"
+									aria-valuemin="0" aria-valuemax="100" id="one_star_progress"></div>
+							</div>
+							</p>
+						</div><!-- style="display: flex; align-items: center;" -->
+						<div class="col-sm-4 text-center">
+							<h6 class="mt-4 mb-4" id="opinImp">Tu opinión es muy importante para nosotros!</h6>
+							<button type="button" name="add_review" id="add_review" class="btn btn-primary">Calificanos
+								y enviá tu comentario</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt-4 mb-4" style="border: 1px solid white" id="review_content"></div>
+		</div>
+
+	</div>
+
+	<script src="js/script.js"></script>
+
+	<footer class="footer mt-auto py-3 bg-dark">
+		<div class="container">
+			<div class="row my-2" style="border: 0px solid green;">
+				<div class="col-md-4 my-2" style="border: 0px solid black;">
+					<!-- <h6 class="text-light">CANBUS APARTAMENTOS</h6> -->
+
+					<div class="list-group-flush bg-dark my-0 py-0">
+						<div class="list-group-item bg-dark my-0 py-0 border-0">
+							<p class="mb-0 text-light" id="footerTitle" style="font-size:medium; font-weight: bold;">
+								CANBUS APARTAMENTOS</p>
+						</div>
+						<div class="list-group-item bg-dark my-0 py-0 border-0">
+							<p class="mb-0 text-light" style="font-size: small;">
+								<span class="iconify" data-icon="ant-design:phone-filled" style="color: white;"
+									data-width="16"></span>&nbsp;&nbsp;+54 261 345345345
+							</p>
+						</div>
+						<div class="list-group-item bg-dark my-0 py-0 border-0">
+							<p class="mb-0 text-light" style="font-size: small;"> <span class="iconify"
+									data-icon="carbon:location-filled" style="color: white;"
+									data-width="16"></span>&nbsp;&nbsp;xxxx A xxxx 1716 - Las Heras - Mendoza</p>
+						</div>
+						<div class="list-group-item bg-dark my-0 py-0 border-0">
+							<p class="mb-0 text-light" style="font-size: small;"><span class="iconify"
+									data-icon="fluent:mail-20-filled" style="color: white;"
+									data-width="16"></span>&nbsp;&nbsp;info@canbus-apartamentos.com</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 my-0 mx-auto d-flex align-items-center justify-content-center"
+					style="border: 0px solid black;">
+					<div class="row text-center my-0 mx-auto" style="border: 0px solid red;">
+						<img src="img/footer/logo_footer.jpg" style="width: 90%; height: 90%;">
+					</div>
+				</div>
+				<div class="col-md-4 my-2" style="border: 0px solid black;">
+
+					<div class="list-group-flush bg-dark my-0 py-0">
+						<div class="list-group-item bg-dark my-0 py-0 border-0">
+							<p class="mb-0 text-light" id="footerFollow" style="font-size:medium; font-weight: bold;">
+								REDES SOCIALES</p>
+						</div>
+						<div class="list-group-item bg-dark my-0 py-0 border-0">
+							<p class="mb-0 text-light" style="font-size: small;">
+								<span class="iconify" data-icon="entypo-social:facebook" style="color: #425db6;"
+									data-width="16" data-height="16"></span>&nbsp;&nbsp;Nombre de canal de facebook
+							</p>
+						</div>
+						<div class="list-group-item bg-dark my-0 py-0 border-0">
+							<p class="mb-0 text-light" style="font-size: small;"> <span class="iconify" data-icon="logos:whatsapp-icon" data-width="16" data-height="16"></span>&nbsp;&nbsp;Whatsapp: +54 261 423423423</p>
+						</div>
+						<div class="list-group-item bg-dark my-0 py-0 border-0">
+							<p class="mb-0 text-light" style="font-size: small;"><img
+									src="img/redes-sociales/Instagram_logo_2016.svg"
+									style="width: 16px; height: 16px;">&nbsp;&nbsp;Nombre de canal de Instagram</p>
+						</div>
+					</div>
+
+
+
+
+				</div>
+			</div>
+			<div class="row my-1">
+				<div class="col-md-6 d-flex align-items-center justify-content-center"><p class="mb-0 text-light" style="font-size: small;">Copyright © Canbus.com</p></div>
+				<div class="col-md-6 d-flex align-items-center justify-content-center"><p class="mb-0 text-light" style="font-size: small;">Diseñado por <a href="https://www.geomaticanet.com">Geomaticanet.com</a></p></div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
+
+<div id="review_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog">
+		<!--role="document"-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Califícanos y enviá tu comentario:</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h4 class="text-center mt-2 mb-4">
+					<i class="fas fa-star star-light submit_star mr-1" id="submit_star_1" data-rating="1"></i>
+					<i class="fas fa-star star-light submit_star mr-1" id="submit_star_2" data-rating="2"></i>
+					<i class="fas fa-star star-light submit_star mr-1" id="submit_star_3" data-rating="3"></i>
+					<i class="fas fa-star star-light submit_star mr-1" id="submit_star_4" data-rating="4"></i>
+					<i class="fas fa-star star-light submit_star mr-1" id="submit_star_5" data-rating="5"></i>
+				</h4>
+				<div class="form-group">
+					<input type="text" name="user_name" id="user_name" class="form-control mb-3"
+						placeholder="Name / Nombre" />
+				</div>
+				<div class="form-group">
+					<input type="text" name="user_numreserva" id="user_numreserva" class="form-control mb-3"
+						placeholder="Reservation number / Número de reserva" />
+				</div>
+				<div class="form-group">
+					<textarea name="user_review" id="user_review" class="form-control"
+						placeholder="Testimonial / Comentario"></textarea>
+					<p style="font-size: 14px; margin-top:10px;" id="comAdv">Solo los huéspedes que reservaron a través
+						de
+						Canbus.com y que se hospedaron en el alojamiento en cuestión pueden dejar un comentario. Esto
+						nos permite verificar que los comentarios provienen de huéspedes reales como vos.</p>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal" id="botonCerrar">Cerrar</button>
+				<button type="button" class="btn btn-primary" id="save_review">Enviar comentario</button>
+				<!--onClick="document.location.reload(true)"-->
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	// definimos la recarga del lenguaje
+	var dataReload = document.querySelectorAll("[data-reload]");
+
+
+	// traduccion de Lenguaje 
+	var language = {
+		es: {
+			navInicio: "Inicio",
+			navFotos: "Fotos",
+			navServ: "Servicios",
+			navPromo: "Promociones",
+			navUbic: "Ubicación",
+			navOpin: "Opiniones",
+			welcomeHead1: "Bienvenidos a Canbus",
+			welcomeText1: "Conoce la tierra del sol y del buen vino!",
+			follow: "Contáctanos y síguenos en:",
+			gallery: "GALERÍA DE FOTOS",
+			servicios: "NUESTROS SERVICIOS",
+			AC: "Aire acondicionado",
+			wifi: "WIFI",
+			ropaCama: "Ropa de cama y toallas",
+			cochera: "Cochera",
+			vajilla: "Vajilla completa",
+			promociones: "PROMOCIONES",
+			promoTitulo1: "Promoción Invierno 2022",
+			promoTexto1: "10% de descuento al reservar más de 5 días!!",
+			ubicacion: "UBICACIÓN",
+			opiniones: "OPINIONES DE NUESTROS HUÉSPEDES",
+			comResumen: "Resumen de opiniones",
+			comTotal: "Opiniones",
+			opinionImportante: "Tu opinión es muy importante para nosotros!",
+			botonOpinion: "Califícanos y envía tu comentario",
+			titlModal: "Califícanos y envía tu comentario",
+			comentarioAviso: "Solo los huéspedes que reservaron a través de Canbus.com y que se hospedaron en el alojamiento en cuestión pueden dejar un comentario. Esto nos permite verificar que los comentarios provienen de huéspedes reales como vos.",
+			footerTitulo: "CANBUS APARTAMENTOS",
+			footerTitulo2: "REDES SOCIALES",
+			btnCerrar: "Cerrar",
+			btnSendRev: "Enviar comentario"
+
+		},
+
+		en: {
+			navInicio: "Home",
+			navFotos: "Gallery",
+			navServ: "Amenities",
+			navPromo: "Special Offers",
+			navUbic: "Location",
+			navOpin: "Testimonials",
+			welcomeHead1: "Welcome to Canbus",
+			welcomeText1: "Meet the city of sun and good wine!",
+			follow: "Contact and follow us:",
+			gallery: "PHOTOS",
+			servicios: "AMENITIES",
+			AC: "Air conditioning",
+			wifi: "WIFI",
+			ropaCama: "Linens and towels",
+			cochera: "Garage",
+			vajilla: "Complete tableware",
+			promociones: "SPECIAL OFFERS",
+			promoTitulo1: "Winter Offer 2022",
+			promoTexto1: "10% discount when booking more than 5 days!!",
+			promoTitulo2: "Website Offer 2022",
+			promoTexto2: "5% discount on your reservation when you contact us through our website!",
+			ubicacion: "LOCATION",
+			opiniones: "GUEST TESTIMONIALS",
+			comResumen: "Rating and reviews summary",
+			comTotal: "Reviews",
+			opinionImportante: "Your testimonial is very important for us!",
+			botonOpinion: "Rate us and send your testimonial",
+			titlModal: "Rate us and send your testimonial",
+			comentarioAviso: "Only guests who booked through Canbus.com and stayed at the accommodation can leave a review. This allows us to verify that the comments come from real guests like you.",
+			footerTitulo: "CANBUS APARTMENTS",
+			footerTitulo2: "FOLLOW US",
+			btnCerrar: "Close",
+			btnSendRev: "Send testimonial"
+		}
+	};
+
+	// definimos el lenguage mediante window hash
+	if (window.location.hash) {
+		if (window.location.hash === "#en") {
+
+			navInicio.textContent = language.en.navInicio;
+			navFotos.textContent = language.en.navFotos;
+			navServ.textContent = language.en.navServ;
+			navPromo.textContent = language.en.navPromo;
+			navUbic.textContent = language.en.navUbic;
+			navOpin.textContent = language.en.navOpin;
+			welcHead1.textContent = language.en.welcomeHead1;
+			welcText1.textContent = language.en.welcomeText1;
+			followUs.textContent = language.en.follow;
+			seccionGaleria.textContent = language.en.gallery;
+			seccServ.textContent = language.en.servicios;
+			servAc.textContent = language.en.AC;
+			servWifi.textContent = language.en.wifi;
+			servRopa.textContent = language.en.ropaCama;
+			servCochera.textContent = language.en.cochera;
+			servVajilla.textContent = language.en.vajilla;
+			seccPromo.textContent = language.en.promociones;
+			promoTit1.textContent = language.en.promoTitulo1;
+			promoText1.textContent = language.en.promoTexto1;
+			promoTit2.textContent = language.en.promoTitulo2;
+			promoText2.textContent = language.en.promoTexto2;
+			seccUbic.textContent = language.en.ubicacion;
+			seccOpin.textContent = language.en.opiniones;
+			comTitl.textContent = language.en.comResumen;
+			totCom.textContent = language.en.comTotal;
+			opinImp.textContent = language.en.opinionImportante;
+			add_review.textContent = language.en.botonOpinion;
+			exampleModalLabel.textContent = language.en.titlModal;
+			comAdv.textContent = language.en.comentarioAviso;
+			footerTitle.textContent = language.en.footerTitulo;
+			footerFollow.textContent = language.en.footerTitulo2;
+			botonCerrar.textContent = language.en.btnCerrar;
+			save_review.textContent = language.en.btnSendRev;
+		}
+		if (window.location.hash === "#es") {
+
+			navInicio.textContent = language.es.navInicio;
+			navFotos.textContent = language.es.navFotos;
+			navServ.textContent = language.es.navServ;
+			navPromo.textContent = language.es.navPromo;
+			navUbic.textContent = language.es.navUbic;
+			navOpin.textContent = language.es.navOpin;
+			welcHead1.textContent = language.es.welcomeHead1;
+			welcText1.textContent = language.es.welcomeText1;
+			followUs.textContent = language.es.follow;
+			seccionGaleria.textContent = language.es.gallery;
+			seccServ.textContent = language.es.servicios;
+			servAc.textContent = language.es.AC;
+			servWifi.textContent = language.es.wifi;
+			servRopa.textContent = language.es.ropaCama;
+			servCochera.textContent = language.es.cochera;
+			servVajilla.textContent = language.es.vajilla;
+			seccPromo.textContent = language.es.promociones;
+			promoTit1.textContent = language.es.promoTitulo1;
+			promoText1.textContent = language.es.promoTexto1;
+			promoTit2.textContent = language.es.promoTitulo2;
+			promoText2.textContent = language.es.promoTexto2;
+			seccUbic.textContent = language.es.ubicacion;
+			seccOpin.textContent = language.es.opiniones;
+			comTitl.textContent = language.es.comResumen;
+			totCom.textContent = language.es.comTotal;
+			opinImp.textContent = language.es.opinionImportante;
+			add_review.textContent = language.es.botonOpinion;
+			exampleModalLabel.textContent = language.es.titlModal;
+			comAdv.textContent = language.es.comentarioAviso;
+			footerTitle.textContent = language.es.footerTitulo;
+			footerFollow.textContent = language.es.footerTitulo2;
+			botonCerrar.textContent = language.es.btnCerrar;
+			save_review.textContent = language.es.btnSendRev;
+
+		}
+	}
+
+	function reloadPage() {
+		setTimeout(function () {
+			location.reload();
+		}, 100);
+	}
+
+</script>
+
+<style>
+	.progress-label-left {
+		float: left;
+		margin-right: 0.5em;
+		line-height: 1em;
+	}
+
+	.progress-label-right {
+		float: right;
+		margin-left: 0.3em;
+		line-height: 1em;
+	}
+
+	.star-light {
+		color: #e9ecef;
+	}
+</style>
+
+<script>
+	let num = '2987649';
+
+
+	$(document).ready(function () {
+
+		var rating_data = 0;
+
+		$('#add_review').click(function () {
+
+			$('#review_modal').modal('show');
+
+		});
+
+		$(document).on('mouseenter', '.submit_star', function () {
+
+			var rating = $(this).data('rating');
+
+			reset_background();
+
+			for (var count = 1; count <= rating; count++) {
+
+				$('#submit_star_' + count).addClass('text-warning');
+
+			}
+
+		});
+
+		function reset_background() {
+			for (var count = 1; count <= 5; count++) {
+
+				$('#submit_star_' + count).addClass('star-light');
+
+				$('#submit_star_' + count).removeClass('text-warning');
+
+			}
+		}
+
+		$(document).on('mouseleave', '.submit_star', function () {
+
+			reset_background();
+
+			for (var count = 1; count <= rating_data; count++) {
+
+				$('#submit_star_' + count).removeClass('star-light');
+
+				$('#submit_star_' + count).addClass('text-warning');
+			}
+
+		});
+
+		$(document).on('click', '.submit_star', function () {
+
+			rating_data = $(this).data('rating');
+
+		});
+
+		$('#save_review').click(function () {
+
+			var user_name = $('#user_name').val();
+
+			var user_numreserva = $('#user_numreserva').val();
+
+			var user_review = $('#user_review').val();
+
+			if (user_name == '' || user_review == '') {
+				alert("Rellena los datos por favor");
+				return false;
+			} else {
+
+				if (user_numreserva == num) {
+					$(':input').val('');
+
+					$.ajax({
+						url: "submit_rating.php",
+						method: "POST",
+						data: {
+							rating_data: rating_data,
+							user_name: user_name,
+							user_review: user_review
+						},
+						success: function (data) {
+							$('#review_modal').modal('hide');
+
+							load_rating_data();
+
+							//alert(data);
+						}
+					})
+				} else {
+					alert("Número de reserva incorrecto");
+					return false;
+				}
+
+			}
+
+		});
+
+		load_rating_data();
+
+		function load_rating_data() {
+			$.ajax({
+				url: "submit_rating.php",
+				method: "POST",
+				data: {
+					action: 'load_data'
+				},
+				dataType: "JSON",
+				success: function (data) {
+					$('#average_rating').text(data.average_rating);
+					$('#total_review').text(data.total_review);
+
+					var count_star = 0;
+
+					$('.main_star').each(function () {
+						count_star++;
+						if (Math.ceil(data.average_rating) >= count_star) {
+							$(this).addClass('text-warning');
+							$(this).addClass('star-light');
+						}
+					});
+
+					$('#total_five_star_review').text(data.five_star_review);
+
+					$('#total_four_star_review').text(data.four_star_review);
+
+					$('#total_three_star_review').text(data.three_star_review);
+
+					$('#total_two_star_review').text(data.two_star_review);
+
+					$('#total_one_star_review').text(data.one_star_review);
+
+					$('#five_star_progress').css('width', (data.five_star_review / data.total_review) * 100 + '%');
+
+					$('#four_star_progress').css('width', (data.four_star_review / data.total_review) * 100 + '%');
+
+					$('#three_star_progress').css('width', (data.three_star_review / data.total_review) * 100 + '%');
+
+					$('#two_star_progress').css('width', (data.two_star_review / data.total_review) * 100 + '%');
+
+					$('#one_star_progress').css('width', (data.one_star_review / data.total_review) * 100 + '%');
+
+					if (data.review_data.length > 0) {
+						var html = '';
+
+						//data.review_data.length
+						for (var count = 0; count < 5; count++) {
+							html += '<div class="row mb-2">';
+
+							// html += '<div class="col-sm-1"><div class="rounded-circle bg-danger text-white pt-2 pb-2"><h3 class="text-center">' + data.review_data[count].user_name.charAt(0) + '</h3></div></div>';
+
+							html += '<div class="col-sm-12">';
+
+							html += '<div class="card">';
+
+							html += '<div class="card-header"><b>' + data.review_data[count].user_name + '</b></div>';
+
+							html += '<div class="card-body">';
+
+							for (var star = 1; star <= 5; star++) {
+								var class_name = '';
+
+								if (data.review_data[count].rating >= star) {
+									class_name = 'text-warning';
+								} else {
+									class_name = 'star-light';
+								}
+
+								html += '<i class="fas fa-star ' + class_name + ' mr-1"></i>';
+							}
+
+							html += '<br />';
+
+							html += data.review_data[count].user_review;
+
+							html += '</div>';
+
+							html += '<div class="card-footer text-right">On ' + data.review_data[count].datetime + '</div>';
+
+							html += '</div>';
+
+							html += '</div>';
+
+							html += '</div>';
+						}
+
+						$('#review_content').html(html);
+					}
+				}
+			})
+		}
+
+	});
+</script>

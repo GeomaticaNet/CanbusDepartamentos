@@ -1,0 +1,141 @@
+/*=============================================
+IMG FONDO
+=====================60========================*/
+button.navbar-toggler {
+	/* background-color: #111111; */
+	height: 60px;
+	width: 100px;
+	margin: 0;
+	padding: 0;
+	font-size: medium;
+	/* margin-right: 0; */
+	border: 0;
+
+}
+
+#imgFondo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: -10;
+	/* background-image: url(../img/slide/slide03.jpg); */
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#phone {
+	width: 54px;
+	height: 54px;
+}
+
+#telegram {
+	width: 56px;
+	height: 56px;
+}
+
+#wasap {
+	width: 56px;
+	height: 56px;
+}
+
+#instagram {
+	width: 56px;
+	height: 56px;
+}
+
+#iframe-maps {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	/*height: 100% !important;*/
+}
+
+/*=============================================
+JD SLIDER
+=============================================*/
+
+.slide-area li {
+	position: relative;
+}
+
+.slide-text {
+	position: absolute;
+	color: #fff;
+	width: 70%;
+	text-align: center;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 85%;
+	text-shadow: 0px 0px 5px black;
+}
+
+.carrusel img {
+	object-fit: cover;
+	width: 100%;
+	height: 50vh;
+}
+
+/*=============================================
+SCROLL UP
+=============================================*/
+
+#scrollUp {
+	bottom: 20px;
+	right: 20px;
+	width: 38px;
+	height: 38px;
+	background: url(../img/top.png);
+
+}
+
+/*=============================================
+ICHECK PERSONALIZADO
+=============================================*/
+
+.terminos {
+	display: none;
+}
+
+.check {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background: url(plugins/blue.png);
+	background-position: 0px top;
+	vertical-align: middle;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.terminos:checked+.check {
+	background-position: -20px top;
+}
+
+#serv {
+	display: flex;
+	justify-content: center;
+}
+
+#servicios {
+	border-radius: 10px;
+}
+
+
+
+#container-list {
+	position: relative;
+	border: 0px solid green;
+}
+
+.list-group {
+	/* margin: 0;*/
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+}
